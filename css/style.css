@@ -1,0 +1,335 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+.section {
+    background-image: url(../images/fio.png);
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: relative;
+    padding: 20px;
+    color: white;
+    align-items: center;
+    width: 96%;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: absolute;
+    top: 20px;
+    width: 88%;
+}
+
+.menu {
+    display: flex;
+    gap: 20px;
+}
+
+.menu a {
+    text-decoration: none;
+    color: white;
+}
+
+.title {
+    text-align: center;
+    font-size: 3em;
+    margin: 0;
+}
+
+.sub-title {
+    margin-left: 60px;
+    font-size: 1.5em;
+    color: white;
+}
+.section-2 {
+    display: flex;
+    flex-direction: column;
+}
+
+.block {
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    border: 1px solid #ccc; 
+    margin: 10px; 
+    border-radius: 5px;
+    width: 96%; 
+    flex-direction: row-reverse;
+}
+
+.image {
+    max-width: 45%;
+    height: auto;
+    margin-right: 20px;
+}
+
+.text {
+    flex: 1;
+}
+
+.reverse {
+    flex-direction: row-reverse;
+}
+
+@media (max-width: 768px) {
+    .block {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .image {
+        margin: 0 0 10px 0;
+    }
+}
+.container_x{
+	text-align: center;
+	font-size: 30px;
+}
+
+.sec-h1{
+	display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin: 40px 0;
+	font-size: 40px;
+    font-weight: 400;
+    letter-spacing: 1px;
+}
+.sec-h1::before, .sec-h1::after{
+	content: '';
+    flex: 1;
+    border-bottom: 1px solid #ccc;
+    margin: 0 15px;
+}
+
+.container-s {
+    display: flex;
+    width: 80vw;
+    height: 80vh; 
+    gap: 10px;
+	margin: auto;
+	color: #ddd;
+	font-size: 15px;
+}
+.container_x{
+	text-align: center;
+	font-size: 30px;
+}
+
+.sec-h1{
+	display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin: 40px 0;
+	font-size: 40px;
+    font-weight: 400;
+    letter-spacing: 1px;
+}
+.sec-h1::before, .sec-h1::after{
+	content: '';
+    flex: 1;
+    border-bottom: 1px solid #ccc;
+    margin: 0 15px;
+}
+
+.container-s {
+    display: flex;
+    width: 80vw;
+    height: 80vh;
+    gap: 10px;
+	margin: auto;
+	color: #0c0c0c;
+	font-size: 15px;
+}
+
+.left-section {
+    display: flex;
+    flex-direction: column;
+    flex: 3;
+    gap: 10px;
+}
+
+.rubik-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap: 5px;
+    flex: 1;
+}
+
+.rubik-grid div {
+    position: relative;
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 100%;
+}
+
+.large {
+    position: relative;
+    background-color: #ddd;
+    height: 30%;
+    background-size: cover;
+    background-position: center;
+}
+
+.right-section {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    gap: 10px;
+}
+
+.tall {
+    position: relative;
+    background-color: #aaa;
+    flex: 2;
+    background-size: cover;
+    background-position: center;
+}
+
+.small {
+    position: relative;
+    background-color: #bbb;
+    flex: 1;
+    background-size: cover;
+    background-position: center;
+}
+
+/* Затемнение с фиолетовым наложением */
+.rubik-grid div::after, .large::after, .tall::after, .small::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(12, 11, 12, 0.629); /* Фиолетовый с полупрозрачностью */
+    transition: background-color 0.3s ease;
+	color: #ddd;
+}
+
+.rubik-grid div:hover::after, .large:hover::after, .tall:hover::after, .small:hover::after {
+    background-color: rgba(17, 15, 17, 0.663); /* Увеличение затемнения при наведении */
+}
+.rubik-grid .img1 { background-image: url('../images/noyt.jpg'); }
+.rubik-grid .img2 { background-image: url('../images/noyt.jpg'); }
+.rubik-grid .img3 { background-image: url('../images/noyt.jpg'); }
+.rubik-grid .img4 { background-image: url('../images/noyt.jpg'); }
+.large { background-image: url('../images/noyt.jpg'); }
+.tall { background-image: url('../images/rabota.jpg'); }
+.small { background-image: url('../images/noyt.jpg'); }
+.square-img:hover::before {
+    opacity: 1; /* Показываем наложение при наведении */
+}
+.form_send .form {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	margin: 80px 0;
+}
+.form_send .form h4 {
+	font-size: 32px;
+	font-weight: 600;
+	color: rgb(52, 52, 52);
+}
+.form_send .form p {
+	font-size: 18px;
+	color: rgb(88, 88, 88);
+	font-weight: 400;
+	margin: 30px 0;
+}
+.form_send .form input {
+	flex: 1 calc(33% - 20px);
+	min-width: 300px;
+	background-color: rgb(236, 232, 232);
+	padding: 20px;
+}
+.form_send .form form {
+	width: 85%;
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+	margin: 40px 0;
+	justify-content: center;
+	gap: 20px;
+}
+.form_send .form input::placeholder {
+	padding: 20px 0;
+	font-size: 18px;
+	font-weight: 400;
+	border-radius: 5px;
+	color: rgb(115, 114, 114);
+}
+.form_send .form .submit {
+	background-color: #c17408;
+	color: white;
+}
+.footer {
+    background-image: url('../images/fio.png'); /* Путь к фоновому изображению футера */
+    background-size: cover; /* Масштабируем фон */
+    background-position: center; /* Центрируем фон */
+    color: white; /* Цвет текста */
+    padding: 20px;
+    display: flex;
+    justify-content: space-evenly;
+    height: 446px;
+    width: 100%;
+    flex-wrap: nowrap;
+}
+
+.footer-content {
+    text-align: center;
+    max-width: 300px;
+    width: 100%;
+    background-image: url('../images/pngwing.com (4).png');
+    background-size: cover;
+    background-position: center;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 20px;
+    border-radius: 5px;
+    color: #000;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+.footer a {
+    color: #61dafb; /* Цвет ссылки */
+    text-decoration: none; /* Убираем подчеркивание */
+}
+
+.footer a:hover {
+    text-decoration: underline; /* Подчеркивание при наведении */
+}
+
+@media (max-width: 768px) {
+    .block {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .image {
+        margin: 0 0 10px 0;
+    }
+
+    .footer {
+        flex-direction: column; /* Вертикальное расположение блоков на узких экранах */
+        align-items: center; /* Центрируем блоки */
+    }
+
+    .footer-content {
+        max-width: none; /* Убираем ограничение ширины для мобильных устройств */
+        margin: 10px 0; /* Отступы между блоками */
+    }
+}
